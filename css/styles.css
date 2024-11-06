@@ -7,13 +7,16 @@
 
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   font-family: system-ui, sans-serif;
   background: var(--body-bg);
@@ -25,6 +28,7 @@ body {
   background: var(--header-bg);
   color: var(--header-text);
   padding: 20px;
+  border-radius: 25px;
 }
 
 .quiz {
@@ -36,6 +40,27 @@ body {
 
 .quiz__card {
   background-color: #ffffff;
-  border-radius: 25px;
-  margin-left: 20%;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.quiz__question {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+  }
 }
