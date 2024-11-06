@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: auto;
   font-family: system-ui, sans-serif;
   background: #d3d6db;
 }
@@ -38,13 +38,15 @@ body {
   text-align: center;
   padding: 15px;
   border-radius: 25px;
-  width: 70%;
-  margin-top: 15px;
+  width: 50%;
+  margin: auto;
+  font-size: smaller;
 }
 
 .quiz {
   max-width: 600px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   padding: 20px;
   border-radius: 25px;
 }
@@ -65,13 +67,15 @@ body {
   margin-bottom: 15px;
 }
 
-.bookmark svg {
-  cursor: pointer;
+.bookmark {
   display: flex;
   justify-content: flex-end;
+  top: -15px;
+  right: -15px;
 }
 
 .bookmark svg:hover {
+  cursor: pointer;
   fill: #000000;
   stroke: #000000;
 }
@@ -80,9 +84,8 @@ body {
   font-size: 0.6em;
   background-color: var(--tag-bg);
   padding: 5px;
-  display: flex;
+  display: inline-block;
   border-radius: 15px;
-  overflow: auto;
 }
 
 /* Button Styling */
@@ -113,14 +116,33 @@ body {
 /* Footer */
 
 footer {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: var(--tag-bg); /* Dark background color for the footer */
-  padding: 50px;
+  background-color: var(--tag-bg);
+  padding: 15px;
   position: sticky;
   bottom: 0;
   width: 100%;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
+
+/* Profile */
+
+.profile__card {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-content: left;
 }
 
 /* Media */
