@@ -72,6 +72,16 @@ body {
   margin-bottom: 15px;
 }
 
+.tag {
+  font-size: 0.6em;
+  background-color: var(--tag-bg);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+/* Bookmark */
+
 .bookmark {
   display: flex;
   justify-content: flex-end;
@@ -85,12 +95,15 @@ body {
   stroke: #000000;
 }
 
-.tag {
-  font-size: 0.6em;
-  background-color: var(--tag-bg);
-  padding: 5px;
-  display: inline-block;
-  border-radius: 15px;
+.bookmark-icon {
+  fill: none;
+  stroke: var(--primary-color);
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.bookmarked {
+  fill: #000000;
+  stroke: #000000;
 }
 
 /* Button Styling */
