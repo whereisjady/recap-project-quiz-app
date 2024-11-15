@@ -1,6 +1,6 @@
 console.clear();
 
-// Toggle
+// Bookmark Toggle
 const bookmarkButton = document.querySelectorAll(".bookmark");
 
 bookmarkButton.addEventListener("click", () => {
