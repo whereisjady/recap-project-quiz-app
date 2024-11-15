@@ -6,6 +6,8 @@
     <title>Code Basics</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="./js/index.js" defer></script>
+    <script src="./js/bookmarks.js" defer></script>
+    <script src="./js/profile.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -17,9 +19,10 @@
               -->
       <div class="quiz">
         <div class="quiz__card">
-          <a class="bookmark">
+          <a class="bookmark" data-js="bookmark-card">
             <svg
               class="bookmark-icon"
+              data-js="bookmark-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -37,10 +40,14 @@
           <h2 class="quiz__question" id="question1">
             What does CSS stand for?
           </h2>
-          <button class="quiz__button" id="show-answer-btn" type="button">
+          <button
+            data-js="quiz__button-answer"
+            class="show-answer-btn"
+            type="button"
+          >
             Show answer
           </button>
-          <p id="answer" class="quiz__answer">
+          <p id="answer" class="quiz__answer" data-js="quiz-answer">
             CSS stands for Cascading Style Sheets.
           </p>
           <p class="tag">#CSS</p>
@@ -54,6 +61,7 @@
           <a class="bookmark">
             <svg
               class="bookmark-icon"
+              data-js="bookmark-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -75,7 +83,11 @@
             document?
           </h2>
 
-          <button class="quiz__button" id="show-answer-btn" type="button">
+          <button
+            data-js="quiz__button-answer"
+            class="show-answer-btn"
+            type="button"
+          >
             Show answer
           </button>
           <p id="answer" class="quiz__answer">< link ></p>
@@ -91,6 +103,7 @@
           <a class="bookmark">
             <svg
               class="bookmark-icon"
+              data-js="bookmark-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -110,7 +123,11 @@
             What is the purpose of the HTML &lt;div&gt; element?
           </h2>
 
-          <button class="quiz__button" id="show-answer-btn" type="button">
+          <button
+            data-js="quiz__button-answer"
+            class="show-answer-btn"
+            type="button"
+          >
             Show answer
           </button>
           <p id="answer" class="quiz__answer">
@@ -128,6 +145,7 @@
           <a class="bookmark">
             <svg
               class="bookmark-icon"
+              data-js="bookmark-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -148,7 +166,11 @@
             Which CSS property is used to change the text color of an element?
           </h2>
 
-          <button class="quiz__button" id="show-answer-btn" type="button">
+          <button
+            data-js="quiz__button-answer"
+            class="show-answer-btn"
+            type="button"
+          >
             Show answer
           </button>
           <p id="answer" class="quiz__answer">color</p>
@@ -164,6 +186,7 @@
           <a class="bookmark">
             <svg
               class="bookmark-icon"
+              data-js="bookmark-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -183,7 +206,11 @@
             What is the default display property for most HTML elements?
           </h2>
 
-          <button class="quiz__button" id="show-answer-btn" type="button">
+          <button
+            data-js="quiz__button-answer"
+            class="show-answer-btn"
+            type="button"
+          >
             Show answer
           </button>
           <p id="answer" class="quiz__answer">block</p>
