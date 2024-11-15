@@ -179,6 +179,17 @@ footer {
   justify-content: left;
 }
 
+/* Form */
+
+.form-section {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-content: left;
+}
+
 /* Media */
 
 @media (min-width: 800px) {
