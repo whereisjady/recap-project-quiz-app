@@ -17,17 +17,23 @@
     <main>
       <section class="form-section">
         <form class="add-card">
-          <fieldset aria-describedby="add your question">
+          <fieldset
+            aria-describedby="add your question"
+            class="add-your-question"
+          >
             <label for="your-question">Your question:</label>
 
             <textarea
               type="text"
               id="your-question"
+              class="add-your-question"
               data-js="your-question"
               maxlength="150"
               required
             ></textarea>
-            <p class="charCounter" data-js="charCounter">0 / 150 characters</p>
+            <p class="charCounter add-your-question" data-js="charCounter">
+              0 / 150 characters
+            </p>
           </fieldset>
 
           <fieldset aria-describedby="add your answer">

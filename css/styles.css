@@ -37,8 +37,8 @@ body {
 .header {
   position: top;
   top: 0;
-  background: var(--primary-color);
-  color: var(--secondary-text);
+  background: var(--tag-bg);
+  color: var(--primary-text);
   justify-content: center;
   text-align: center;
   padding: 15px;
@@ -91,7 +91,7 @@ body {
 
 .bookmark svg:hover {
   cursor: pointer;
-  fill: #000000;
+  fill: var(--tag-bg);
   stroke: #000000;
 }
 
@@ -112,7 +112,7 @@ body {
   padding: 10px;
   font-size: 1em;
   color: #333;
-  background-color: #e7e9eb;
+  background-color: var(--tag-bg);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -142,7 +142,7 @@ footer {
   align-items: center;
   background-color: var(--tag-bg);
   padding: 15px;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -209,12 +209,17 @@ footer {
   border: none;
 }
 
+.add-your-question {
+  display: flex;
+  flex-direction: column;
+}
+
 .submit-question {
   width: 100%;
   padding: 10px;
   font-size: 1em;
   color: #333;
-  background-color: #e7e9eb;
+  background-color: var(--tag-bg);
   border: none;
   border-radius: 8px;
   cursor: pointer;
