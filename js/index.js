@@ -1,6 +1,8 @@
-const body = document.querySelector("body");
-const toggleButton = document.querySelector("[data-js=toggle-button]");
+console.clear();
 
-toggleButton.addEventListener("click", () => {
-  body.classList.toggle("dark");
+const bodyElement = document.querySelector('[data-js="body"]');
+const darkModeButton = document.querySelector('[data-js="dark-mode"]');
+
+darkModeButton.addEventListener("click", () => {
+  bodyElement.classList.toggle("dark");
 });
