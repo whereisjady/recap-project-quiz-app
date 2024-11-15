@@ -9,51 +9,18 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Code Basics</h1>
+      <h1 class="header__title">Quiz App</h1>
     </header>
   </body>
   <!--
                 BOOKMARKED 1
               -->
   <div class="quiz">
-    <div class="quiz__card" id="bookmarked">
-      <a class="bookmark">
-        <svg
-          class="=bookmark-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-bookmark-check"
-        >
-          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-          <path d="m9 10 2 2 4-4" />
-        </svg>
-      </a>
-
-      <h2 class="quiz__question" id="question2">
-        Which HTML tag is used to link an external CSS file to an HTML document?
-      </h2>
-
-      <button class="quiz__button" id="show-answer-btn">Show answer</button>
-      <p id="answer" class="quiz__answer">< link ></p>
-      <p class="tag">#HTML</p>
-      <p class="tag">#CSS</p>
-    </div>
-  </div>
-  <!--
-                BOOKMARKED 2
-              -->
-  <div class="quiz">
     <div class="quiz__card">
-      <a class="bookmark">
+      <a class="bookmark" data-js="bookmark-card">
         <svg
-          class="=bookmark-icon"
+          class="bookmark-icon bookmarked"
+          data-js="bookmark-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="30"
           height="30"
@@ -63,20 +30,22 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-bookmark-check"
+          class="lucide lucide-bookmark"
         >
-          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-          <path d="m9 10 2 2 4-4" />
+          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
         </svg>
       </a>
-
-      <h2 class="quiz__question" id="question4">
-        Which CSS property is used to change the text color of an element?
-      </h2>
-
-      <button class="quiz__button" id="show-answer-btn">Show answer</button>
-      <p id="answer" class="quiz__answer">color</p>
-      <p class="tag">#HTML</p>
+      <h2 class="quiz__question" id="question1">What does CSS stand for?</h2>
+      <button
+        data-js="quiz__button-answer"
+        class="show-answer-btn"
+        type="button"
+      >
+        Show answer
+      </button>
+      <p id="answer" class="quiz__answer" data-js="quiz-answer">
+        CSS stands for Cascading Style Sheets.
+      </p>
       <p class="tag">#CSS</p>
     </div>
   </div>
@@ -133,7 +102,30 @@
             </svg>
           </a>
         </li>
-
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="form.html"
+            aria-label="go to the form to add a card page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#322d29"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-plus"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8" />
+              <path d="M12 8v8" />
+            </svg>
+          </a>
+        </li>
         <li class="navigation__list-item">
           <a
             class="navigation__link"

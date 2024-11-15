@@ -5,63 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Basics</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/bookmarks.js" defer></script>
+    <script src="./js/profile.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
+    <main>
+      <section class="form-section">
+        <form>
+          <fieldset aria-describedby="add your question">
+            <label for="your-question">Your question:</label>
 
-    <section class="profile__card">
-      <a href="#" role="button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="60"
-          height="60"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-circle-user-round"
-        >
-          <path d="M18 20a6 6 0 0 0-12 0" />
-          <circle cx="12" cy="10" r="4" />
-          <circle cx="12" cy="12" r="10" />
-        </svg>
-      </a>
-      <h3>Your Name</h3>
-      <h4 class="profile__card" id="about-me">
-        About me................<br />
-        ...............................<br />
-        ...............................
-      </h4>
+            <textarea
+              type="text"
+              id="your-question"
+              maxlength="150"
+              required
+            ></textarea>
+          </fieldset>
 
-      <a class="button" data-js="toggle-button"
-        ><h6>Toggle dark mode</h6>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-toggle-left"
-        >
-          <rect width="20" height="12" x="2" y="6" rx="6" ry="6" />
-          <circle cx="8" cy="12" r="2" />
-        </svg>
-      </a>
-    </section>
-    <script>
-      const toggleButton = document.querySelector('[data-js="toggle-button"]');
-      toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-      });
-    </script>
+          <fieldset aria-describedby="add your answer">
+            <label for="answer-to-your-question">Your answer:</label>
+
+            <textarea
+              type="text"
+              id="answer-to-your-question"
+              maxlength="150"
+              required
+            ></textarea>
+          </fieldset>
+
+          <fieldset aria-describedby="add the corresponding tag">
+            <label for="corresponding-tag">Tag:</label>
+
+            <textarea
+              type="text"
+              id="corresponding-tag"
+              maxlength="20"
+              required
+            ></textarea>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <!--
+                FOOTER NAV
+              -->
     <footer>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -114,8 +106,32 @@
               </svg>
             </a>
           </li>
-
           <li class="navigation__list-item navigation__list-item--active">
+            <a
+              class="navigation__link"
+              href="form.html"
+              aria-label="go to the form to add a card page"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#322d29"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-plus"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8" />
+                <path d="M12 8v8" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="navigation__list-item">
             <a
               class="navigation__link"
               href="profile.html"
