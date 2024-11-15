@@ -107,7 +107,7 @@ body {
 }
 
 /* Button Styling */
-.quiz__button {
+.show-answer-btn {
   width: 100%;
   padding: 10px;
   font-size: 1em;
@@ -123,12 +123,17 @@ body {
 }
 
 /* Answer Styling */
+
 .quiz__answer {
   display: none;
-  font-size: 1.3em;
-  color: green;
+  font-size: 0.9em;
+  color: #d3d6db;
   margin-top: 20px;
   font-weight: bold;
+}
+
+.quiz__answer--active {
+  display: block;
 }
 
 /* Footer */
