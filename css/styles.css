@@ -136,7 +136,7 @@ body {
   display: block;
 }
 
-/* Footer */
+/* Footer Navigation */
 
 footer {
   align-items: center;
@@ -161,13 +161,20 @@ footer {
   align-items: center;
   justify-content: center;
   flex: 1;
-}
-
-.footer-icon {
   fill: var(--primary-color);
   stroke: var(--primary-color);
 }
 
+.navigation__list-item svg:hover {
+  cursor: pointer;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
+
+.navigation__list-item--active {
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
 /* Profile */
 
 .profile__card {
@@ -183,11 +190,40 @@ footer {
 
 .form-section {
   background-color: var(--secondary-color);
+  border: none;
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   justify-content: left;
+  font-size: smaller;
+}
+
+.add-card {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-content: left;
+  border: none;
+}
+
+.submit-question {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  color: #333;
+  background-color: #e7e9eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.charCounter {
+  font-size: 0.5em;
+  color: #555;
+  margin-top: 5px;
 }
 
 /* Media */

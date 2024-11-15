@@ -8,6 +8,7 @@
     <script src="./js/index.js" defer></script>
     <script src="./js/bookmarks.js" defer></script>
     <script src="./js/profile.js" defer></script>
+    <script src="./js/form.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -15,16 +16,18 @@
     </header>
     <main>
       <section class="form-section">
-        <form>
+        <form class="add-card">
           <fieldset aria-describedby="add your question">
             <label for="your-question">Your question:</label>
 
             <textarea
               type="text"
               id="your-question"
+              data-js="your-question"
               maxlength="150"
               required
             ></textarea>
+            <p class="charCounter" data-js="charCounter">0 / 150 characters</p>
           </fieldset>
 
           <fieldset aria-describedby="add your answer">
@@ -33,9 +36,11 @@
             <textarea
               type="text"
               id="answer-to-your-question"
+              data-js="answer-to-your-question"
               maxlength="150"
               required
             ></textarea>
+            <p class="charCounter" data-js="charCounter">0 / 150 characters</p>
           </fieldset>
 
           <fieldset aria-describedby="add the corresponding tag">
@@ -44,10 +49,12 @@
             <textarea
               type="text"
               id="corresponding-tag"
+              data-js="corresponding-tag"
               maxlength="20"
               required
             ></textarea>
           </fieldset>
+          <button type="submit" class="submit-question">Submit question</button>
         </form>
       </section>
     </main>
