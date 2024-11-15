@@ -129,9 +129,20 @@ footer {
   width: 100%;
 }
 
-footer nav {
+.navigation__list {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navigation__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .footer-icon {
