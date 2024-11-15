@@ -4,7 +4,7 @@ console.clear();
 const bookmarkButton = document.querySelector('[data-js="bookmark-card"]');
 
 bookmarkButton.addEventListener("click", () => {
-  const icon = bookmarkButton.querySelector(".bookmark-icon");
+  const icon = bookmarkButton.querySelector('[data-js="bookmark-icon"]');
   icon.classList.toggle("bookmarked");
 });
 
