@@ -72,7 +72,7 @@ body {
   margin-bottom: 15px;
 }
 
-.tag {
+.tagLabel {
   font-size: 0.6em;
   background-color: var(--tag-bg);
   padding: 5px;
