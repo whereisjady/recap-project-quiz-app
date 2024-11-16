@@ -64,6 +64,17 @@ submitQuestionForm.addEventListener("submit", (event) => {
   questionTag.textContent = `${textAreaTag.value}`;
   questionTag.classList.add("quiz__tag");
 
+  // toggle answer button
+
+  //   const newQuestionshowAnswerButton = document.querySelector(
+  //     '[data-js="quiz__button-answer"]'
+  //   );
+  //   const newQuestionAnswer = document.querySelector('[data-js="quiz-answer"]');
+
+  //   newQuestionshowAnswerButton.addEventListener("click", () => {
+  //     newQuestionAnswer.classList.toggle("answer-to-your-question--active");
+  //   });
+
   // appending to questioncontainer
   newQuestionContainer.appendChild(newQuestionBookmark);
   newQuestionContainer.appendChild(newQuestion);

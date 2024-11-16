@@ -221,6 +221,15 @@ footer {
   display: flex;
   flex-direction: column;
   border: ;
+  display: none;
+  font-size: 0.9em;
+  color: var(--primary-text);
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.answer-to-your-question--active {
+  display: block;
 }
 
 .corresponding-tag {
