@@ -4,10 +4,12 @@
 
 :root {
   --primary-color: #322d29;
-  --secondary-color: #ffffff;
+  --secondary-color: #ffff;
   --secondary-text: #efe9e1;
   --primary-text: #322d28;
   --tag-bg: #ffefd5;
+  --background-color: #b38b6d;
+  --answer-text: #b38b6d;
 }
 
 *::before,
@@ -26,7 +28,7 @@ body {
   align-items: center;
   margin: auto;
   font-family: system-ui, sans-serif;
-  background: #d3d6db;
+  background: var(--background-color);
 }
 
 .dark {
@@ -111,7 +113,7 @@ body {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  color: #333;
+  color: var(--primary-text);
   background-color: var(--tag-bg);
   border: none;
   border-radius: 8px;
@@ -119,7 +121,7 @@ body {
 }
 
 .quiz__button:hover {
-  background-color: #d3d6db;
+  background-color: var(--background-color);
 }
 
 /* Answer Styling */
@@ -127,7 +129,7 @@ body {
 .quiz__answer {
   display: none;
   font-size: 0.9em;
-  color: #d3d6db;
+  color: var(--primary-text);
   margin-top: 20px;
   font-weight: bold;
 }
@@ -212,13 +214,26 @@ footer {
 .add-your-question {
   display: flex;
   flex-direction: column;
+  border: ;
+}
+
+.answer-to-your-question {
+  display: flex;
+  flex-direction: column;
+  border: ;
+}
+
+.corresponding-tag {
+  display: flex;
+  flex-direction: column;
+  border: ;
 }
 
 .submit-question {
   width: 100%;
   padding: 10px;
-  font-size: 1em;
-  color: #333;
+  font-size: 0.8em;
+  color: var(--primary-text);
   background-color: var(--tag-bg);
   border: none;
   border-radius: 8px;

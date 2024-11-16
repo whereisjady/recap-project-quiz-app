@@ -15,8 +15,8 @@
       <h1 class="header__title">Quiz App</h1>
     </header>
     <main>
-      <section class="form-section">
-        <form class="add-card">
+      <section class="form-section" data-js="form-section">
+        <form class="add-card" data-js="add-card">
           <fieldset
             aria-describedby="add your question"
             class="add-your-question"
@@ -43,6 +43,7 @@
               type="text"
               id="answer-to-your-question"
               data-js="answer-to-your-question"
+              class="answer-to-your-question"
               maxlength="150"
               required
             ></textarea>
@@ -53,14 +54,21 @@
             <label for="corresponding-tag">Tag:</label>
 
             <textarea
-              type="text"
+              type="label"
               id="corresponding-tag"
+              class="corresponding-tag"
               data-js="corresponding-tag"
               maxlength="20"
               required
             ></textarea>
           </fieldset>
-          <button type="submit" class="submit-question">Submit question</button>
+          <button
+            type="submit"
+            class="submit-question"
+            data-js="submit-question"
+          >
+            Submit question
+          </button>
         </form>
       </section>
     </main>
